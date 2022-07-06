@@ -16,7 +16,7 @@
     <nav class="menu">
         <img src="" alt="Logo">
         <ul>
-            <li><a href="">Home----</a></li>
+            <li><a href="">Home</a></li>
             <li id="cadastrar"><a href=""> Cadastrar</a></li>
             <li><a href="">Login</a></li>
         </ul>
