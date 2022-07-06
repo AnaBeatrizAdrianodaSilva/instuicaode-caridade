@@ -1,5 +1,6 @@
 <?php
-require("../CSS/style.php");
+    require("../CSS/style.php");
+    require("../CSS/styleHeader.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +13,11 @@ require("../CSS/style.php");
 </head>
 
 <body>
-    <nav>
+    <nav class="menu">
+        <img src="" alt="Logo">
         <ul>
             <li><a href="">Home</a></li>
-            <li><a href=""> Cadastrar</a></li>
+            <li id="cadastrar"><a href=""> Cadastrar</a></li>
             <li><a href="">Login</a></li>
         </ul>
     </nav>
