@@ -8,7 +8,7 @@
     <title>Instutições de Caridade</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/styleHeader.css">
@@ -23,6 +23,9 @@
     <header>
         <h1>Bem Vindo(a)</h1>
     </header>
-</body>
 
+    <?php
+        require("../templates/footer.php");
+    ?>
+</body>
 </html>

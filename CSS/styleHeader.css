@@ -16,7 +16,7 @@
     --color-9: black;
 
     /* Fonts */
-    --font-menu: 'Ubuntu', sans-serif;;
+    --font-menu-footer: 'Ubuntu', sans-serif;;
 }
 
 
@@ -75,7 +75,7 @@
         color: var(--color-9);
         text-decoration: none;
         text-align: center;
-        font-family: var(--font-menu);
+        font-family: var(--font-menu-footer);
         /* font-weight: bold; */
     }
 

@@ -45,9 +45,5 @@
     <?php
         require("../templates/footer.php");
     ?>
-            <input class="botao" type="submit" value="Login">
-            <p>Não possui conta? <a class="espesifico" href="cadUsuario.php">Crie agora</a></p>
-        </form>
-    <!-- </div> -->
 </body>
 </html>

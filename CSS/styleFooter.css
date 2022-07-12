@@ -1,0 +1,80 @@
+/* Variaveis */
+
+:root {
+    /* Cores */
+        /* primária */
+    --color-0: white;
+    --color-1: #0D665D;
+    --color-2: #5A5A5A;
+    --color-3: #B4B4B4;
+    --color-4: #06282E;
+        /* secundária */
+    --color-5: #16193B;
+    --color-6: #C8C8C8;
+    --color-7: #BABCCC;
+    --color-8: #EFEFEF;
+    --color-9: black;
+
+    /* Fonts */
+    --font-menu-footer: 'Ubuntu', sans-serif;
+    --font-footer-titulo: 'Comfortaa', cursive;
+}
+
+/* Config Globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* footer */
+
+.rodape {
+    background-color: var(--color-6);
+    font-family: var(--font-menu-footer);
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.rodape h2 {
+    font-size: 27px;
+    font-family: var(--font-footer-titulo);
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 3px;
+}
+
+.contato p {
+    line-height: 23px;
+    width: 440px;
+}
+
+.contato p a {
+    color: var(--color-9);
+    text-decoration: none;
+}
+
+.contato p a:hover {
+    color: var(--color-1);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.sobrePI p {
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    word-spacing: 3px;
+    font-size: 16px;
+    width: 450px;
+    padding-bottom: 10px;
+}
