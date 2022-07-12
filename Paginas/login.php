@@ -1,7 +1,3 @@
-<?php
-    require("../CSS/style.php");
-    require("../CSS/styleHeader.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/styleLogin.css">
+    <link rel="stylesheet" href="CSS/styleHeader.css">
 </head>
 
 <body>
