@@ -46,7 +46,7 @@
             <br>
 
             <input class="botao" type="submit" value="Login">
-            <p>Não possui conta? <a href="cadUsuario.php">Crie agora</a></p>
+            <p>Não possui conta? <a class="espesifico" href="cadUsuario.php">Crie agora</a></p>
         </form>
     <!-- </div> -->
 </body>
