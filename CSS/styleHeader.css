@@ -16,7 +16,7 @@
     --color-9: black;
 
     /* Fonts */
-    --font-menu-footer: 'Ubuntu', sans-serif;;
+    --font-menu-footer: 'Ubuntu', sans-serif;
 }
 
 
@@ -76,10 +76,10 @@
         text-decoration: none;
         text-align: center;
         font-family: var(--font-menu-footer);
-        /* font-weight: bold; */
     }
 
     .menu ul li a:hover {
         color: var(--color-0);
-        font-weight: bolder;
+        font-weight: bold;
+        text-decoration: underline;
     }

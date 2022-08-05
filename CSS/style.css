@@ -1,0 +1,141 @@
+/* Variaveis */
+
+:root {
+    /* Cores */
+        /* primária */
+    --color-0: white;
+    --color-1: #0D665D;
+    --color-2: #5A5A5A;
+    --color-3: #B4B4B4;
+    --color-4: #06282E;
+        /* secundária */
+    --color-5: #16193B;
+    --color-6: #C8C8C8;
+    --color-7: #BABCCC;
+    --color-8: #EFEFEF;
+    --color-9: black;
+
+    /* Fonts */
+    --font-menu-footer: 'Ubuntu', sans-serif;
+    --font-titulo: 'Quicksand', sans-serif;
+    --font-padrao: 'Poppins', sans-serif;
+    --font-links-footer: 'Ubuntu', sans-serif;
+}
+
+    /* config Globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.cabeca {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.cabeca:after {
+    content: '';
+    width: 590px;
+    height: 3px;
+    background-color: var(--color-2);
+    position: absolute;
+    top: 141px;
+    right: 0;
+    bottom: 0;
+    left: 365px;
+}
+
+.cabeca h1, p {
+    text-align: center;
+    margin: 30px;
+}
+
+.cabeca h1 {
+    font-family: var(--font-titulo);
+}
+
+.cabeca p {
+    font-family: var(--font-padrao);
+}
+
+/* Linha */
+
+.row {
+    width: 78.125rem;
+    height: 50px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row h2 {
+    font-family: var(--font-titulo);
+}
+
+.row a {
+    color: var(--color-1);
+    text-decoration: none;
+    font-family: var(--font-links-footer);
+    font-size: 19px;
+}
+
+.row a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* corpo */
+
+.instituicoes {
+    background-color: var(--color-6);
+    width: 78.125rem;
+    margin: 50px auto;
+    border-radius: 19px;
+}
+
+.instituicoes figure {
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+}
+
+.instituicoes figcaption {
+    margin: 70px;
+}
+
+.instituicoes h3 {
+    text-align: center;
+    font-size: 22px;
+    font-family: var(--font-titulo);
+}
+
+.instituicoes p {
+    text-align: justify;
+    font-family: var(--font-padrao);
+}
+
+.instituicoes p a {
+    text-decoration: none;
+    color: var(--color-9);
+}
+
+.instituicoes p a:hover {
+    color: var(--color-5);
+    text-decoration: underline;
+}
+
+.instituicoes img {
+    max-width: 28.125rem;
+    max-height: 28.125rem;
+    margin: 50px;
+    border-radius: 13px;
+}
+
+
