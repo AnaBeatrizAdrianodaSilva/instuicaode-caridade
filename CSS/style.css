@@ -98,6 +98,7 @@
     width: 104.125rem;
     margin: 50px auto;
     border-radius: 19px;
+    margin-bottom: 100px;
 }
 
 .instituicoes figure {
@@ -145,9 +146,27 @@
 }
 
 .instituicoes img {
-    /* max-width: 28.125rem;
-    max-height: 28.125rem; */
     margin: 50px;
     border-radius: 13px;
 }
 
+/* RESPONSIVO */
+
+@media (max-width: 1680px) {
+    /* HEADER */
+
+    .cabeca:after {
+        left: 35.563rem;
+    }
+
+    /* INSTITUIÇÕES */
+
+    .instituicoes {
+        width: 95.125rem;
+        margin-bottom: 100px;
+    }
+
+    .instituicoes figure:after {
+        width: 88.875rem;
+    }
+}
