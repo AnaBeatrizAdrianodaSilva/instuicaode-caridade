@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instutições de Caridade</title>
+    <title>Instituições de Caridade</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
@@ -56,7 +56,7 @@
 
     <section class='instituicoes'>
         <figure>
-            <img src="../img/andreLuiz.jpg" alt="Foto da uma das sedes da instituição André Luiz">
+            <img src="../img/andreLuiz.png" alt="Foto da uma das sedes da instituição André Luiz">
             <figcaption>
                 <h3>Casas André Luiz</h3>
                 <p>
@@ -64,13 +64,19 @@
                     mais de 1.400 pacientes com necessidades especiais. A instituição recebe alimentos, roupas,
                     calçados, eletrodomésticos, eletrônicos e produtos usados em bom estado. A coleta pode ser feita na
                     casa do doador, porém ele precisa residir na Grande São Paulo. Tudo que é doado é vendido no bazar
-                    beneficente da própria instituição. Mais informações: <a href='tel:+1124597000'>(11) 2459-7000</a>
+                    beneficente da própria instituição. 
+                    
+                    A especialidade clínica na área médica conta com uma estrutura adequada em nossa área médica e em constante aperfeiçoamento, realizamos o atendimento clínico gratuito de pessoas com deficiência intelectual em seus vários aspectos.
+
+                    A atenção está voltada principalmente à prevenção de morbidades físicas, intelectuais e emocionais em nossa ONG. Para isso, avalia-se o paciente como um todo e busca-se restabelecer o equilíbrio energético e estimular as suas potencialidades.
+                    
+                    Mais informações: <a href='tel:+1124597000'>(11) 2459-7000</a>
                 </p>
             </figcaption>
         </figure>
 
         <figure>
-            <img src="../img/abrace.jpg" alt="Foto da uma das sedes da instituição André Luiz">
+            <img src="../img/abrace.png" alt="Foto da uma das sedes da instituição André Luiz">
             <figcaption>
                 <h3>Abrace</h3>
                 <p>
@@ -89,7 +95,7 @@
         </figure>
 
         <figure>
-            <img src="../img/chicoXavier.jpg" alt="Foto da uma das sedes da instituição André Luiz">
+            <img src="../img/chicoXavier.png" alt="Foto da uma das sedes da instituição André Luiz">
             <figcaption>
                 <h3>Larzinho Chico e Xavier</h3>
                 <p>
@@ -105,7 +111,7 @@
         </figure>
 
         <figure>
-            <img src="../img/institutoCrianca.jpg" alt="Foto da uma das sedes da instituição André Luiz">
+            <img src="../img/instCrianca.png" alt="Foto da uma das sedes da instituição André Luiz">
             <figcaption>
                 <h3>Instituto da Criança</h3>
                 <p>
@@ -123,7 +129,7 @@
         </figure>
 
         <figure>
-            <img src="../img/exercitoSalvacao.jpg" alt="Foto Exército de Salvação">
+            <img src="../img/salvacao.png" alt="Foto Exército de Salvação">
             <figcaption>
                 <h3>Exército de Salvação</h3>
                 <p>
@@ -142,7 +148,7 @@
         </figure>
 
         <figure>
-            <img src="../img/oProacao.jpg" alt="Foto de crinaças do O Proação">
+            <img src="../img/proacao.png" alt="Foto de crinaças do O Proação">
             <figcaption>
                 <h3>O Proação</h3>
                 <p>

@@ -1,3 +1,5 @@
+nes (115 sloc)  2.2 KB
+
 /* Variaveis */
 
 :root {
@@ -44,10 +46,10 @@
     height: 3px;
     background-color: var(--color-2);
     position: absolute;
-    top: 8.813rem;
+    top: 141px;
     right: 0;
     bottom: 0;
-    left: 41.563rem;
+    left: 365px;
 }
 
 .cabeca h1, p {
@@ -95,7 +97,7 @@
 
 .instituicoes {
     background-color: var(--color-6);
-    width: 104.125rem;
+    width: 78.125rem;
     margin: 50px auto;
     border-radius: 19px;
 }
@@ -103,21 +105,8 @@
 .instituicoes figure {
     display: flex;
     flex-direction: row;
-    position: relative;
+    /* gap: 20px; */
 }
-
-.instituicoes figure:after {
-    content: '';
-    width: 96.875rem;
-    height: 2px;
-    background-color: var(--color-3);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 50px;
-}
-
 
 .instituicoes figcaption {
     margin: 70px;
@@ -145,9 +134,8 @@
 }
 
 .instituicoes img {
-    /* max-width: 28.125rem;
-    max-height: 28.125rem; */
+    max-width: 28.125rem;
+    max-height: 28.125rem;
     margin: 50px;
     border-radius: 13px;
 }
-
