@@ -31,7 +31,8 @@
 /* footer */
 
 .rodape {
-    background-color: var(--color-6);
+    background-color: black;
+    /* background-color: var(--color-6); */
     /* background-color: pink; */
     font-family: var(--font-menu-footer);
     width: 100%;
