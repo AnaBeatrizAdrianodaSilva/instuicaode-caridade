@@ -160,7 +160,7 @@
                     permanência e o aprendizado de forma ampla e irrestrita. O foco de atenção de “O Proação” é a
                     criança e o adolescente, buscando oferecer-lhes condições e oportunidades de construção de um novo
                     projeto de vida. A instituição recebe fraldas, produtos de limpeza, brinquedos, roupas, alimentos e
-                    outros ítens. Mais Informações <a href='tel:+3136585798'>(31) 3658-5798</a>
+                    outros itens. Mais Informações <a href='tel:+3136585798'>(31) 3658-5798</a>
                 </p>
             </figcaption>
         </figure>
