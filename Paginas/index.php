@@ -11,8 +11,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/styleHeader.css">
-    <link rel="stylesheet" href="../CSS/styleFooter.css">
+    <!-- <link rel="stylesheet" href="../CSS/styleHeader.css">
+    <link rel="stylesheet" href="../CSS/styleFooter.css"> -->
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
 
     <header class='cabeca'>
         <h1>Bem Vindo(a)</h1>
-        <p>
+        <p class='textInst'>
             Instituições de caridade são empresas privadas de caráter não lucrativo com fins de beneficiar determinadas
             causas.
         </p>

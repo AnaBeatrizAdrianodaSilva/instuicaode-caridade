@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
         <!-- font-family: 'Ubuntu', sans-serif; -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,21 +29,27 @@
             <p>Amanda - 
                 <a href="mailto:amanda.rondao@alunos.sc.senac.br">amanda.rondao@alunos.sc.senac.br</a>
             </p>
+
             <p>Ana Beatriz - 
                 <a href="mailto:ana.silva68@alunos.sc.senac.br">ana.silva68@alunos.sc.senac.br</a>
             </p>
+
             <p>Isabella - 
                 <a href="mailto:isabella.schmitz@alunos.sc.senac.br">isabella.schmitz@alunos.sc.senac.br</a>
             </p>
+
             <p>João Gabriel - 
                 <a href="mailto:joao.alves1@alunos.sc.senac.br">joao.alves1@alunos.sc.senac.br</a>
             </p>
+
             <p>Lais Betim - 
                 <a href="mailto:lais.betim@alunos.sc.senac.br">lais.betim@alunos.sc.senac.br</a>
             </p>
+
             <p>Nathalia - 
                 <a href="mailto:nathalia.andrade@alunos.sc.senac.br" id="nath">nathalia.andrade@alunos.sc.senac.br</a>
             </p>
+            
         </div>
         
         <div class="sobrePI">

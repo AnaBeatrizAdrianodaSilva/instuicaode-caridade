@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ver Mais</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/styleVerMais.css">
-    <link rel="stylesheet" href="../CSS/styleHeader.css">
 </head>
 <body>
 
@@ -30,6 +32,12 @@
         <a href="https://projetoromper.org.br/" target="_blank"><img src="../img/preto.jpg" alt="Teste"></a>
         <a href="https://www.exercitodoacoes.org.br/" target="_blank"><img src="../img/preto.jpg" alt="Teste"></a>
     </section>
+
+
 </div>
+
+    <?php
+        require('../templates/footer.php');
+    ?>
 </body>
 </html>

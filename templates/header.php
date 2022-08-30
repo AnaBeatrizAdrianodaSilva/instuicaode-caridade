@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/styleHeader.css">
+    <link rel="stylesheet" href="../CSS/styleHeader.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
