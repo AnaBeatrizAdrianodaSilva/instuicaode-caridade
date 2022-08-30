@@ -152,14 +152,14 @@
 
 /* RESPONSIVO */
 
-/* @media (max-width: 1680px) {
-    HEADER
+@media (max-width: 1680px) {
+    /* HEADER */
 
     .cabeca:after {
         left: 35.563rem;
     }
 
-    INSTITUIÇÕES
+    /* INSTITUIÇÕES */
 
     .instituicoes {
         width: 95.125rem;
@@ -169,4 +169,4 @@
     .instituicoes figure:after {
         width: 88.875rem;
     }
-} */
+}

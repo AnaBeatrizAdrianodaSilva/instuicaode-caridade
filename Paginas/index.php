@@ -41,13 +41,13 @@
         require("../templates/header.php");
     ?>
 
-    <header class='cabeca'>
+    <section class='cabeca'>
         <h1>Bem Vindo(a)</h1>
         <p class='textInst'>
             Instituições de caridade são empresas privadas de caráter não lucrativo com fins de beneficiar determinadas
             causas.
         </p>
-    </header>
+    </section>
 
     <div class='row'>
         <h2>Instituições recomendadas</h2>

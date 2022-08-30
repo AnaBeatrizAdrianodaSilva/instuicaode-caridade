@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <nav class="menu">
+    <!-- <nav class="menu">
         <img src="../img/logo.png" alt="Logo" class="logo">
         <ul>
             <li>
@@ -33,7 +33,43 @@
                 <a href="">Login</a>
             </li>
         </ul>
-    </nav>
+    </nav> -->
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <!-- <h1>Logo</h1> -->
+                <img class='logo' src="../img/logo.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <script src="../JS/menu.js"></script>
 </body>
 
 </html>
