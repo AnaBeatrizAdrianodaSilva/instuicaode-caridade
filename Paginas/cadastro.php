@@ -1,4 +1,5 @@
 <?php
+    include "../include/functions.php";
     include "../include/MySql.php";
 
     //variaveis
@@ -6,7 +7,7 @@
     $emailErr = $nomeErr = $cpfErr = $senhaErr = "";
 
     if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['cadastro'])){
-        f (empty($_POST['email'])){
+        if (empty($_POST['email'])){
             $emailErr = "Email é obrigatório!";
         } else {
             $email = test_input($_POST["email"]);
@@ -34,40 +35,23 @@
                 if ($sql->rowCount() > 0){
                     $msgErr = "Usuário já cadastrado!";
                 }else{
-                    $sql = $pdo->prepare("INSERT INTO CADASTRO (codigo, email, nome, cpf, senha)
+                    $sql = $pdo->prepare("INSERT INTO USUARIO (codigo, email, nome, cpf, senha)
                                           values (null, ?,?,?,?)");
-                    if                      
+                    if ($sql->execute(array($nome, $email, md5($senha), $cpf))){
+                        $msgErr = "Dados cadastrados com sucesso!";
+                        header('location: login.php');
+                    }else{
+                        $msgErr = "Dados não cadastrados!";
+                    }                     
                 }
+            }else{
+                $msgErr = "Erro no comando SELECT";
             }
+        }else{
+            $msgErr = "Dados não cadastrados!";
         }
     }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -108,26 +92,26 @@
             <label for="email">Nome Completo:</label>
             <br>
             <input type="text" name="email">
-            <span class="nanda">*</span>
+            <span class="nanda">* <?php echo $nomeErr ?></span>
             <br>
             <br>
 
             <label for="senha">Email:</label>
             <br>
             <input type="text" name="senha">
-            <span class="nanda">* </span>
+            <span class="nanda">* <?php echo $emailErr ?></span>
             <br>
             <br>
             <label for="email">CPF:</label>
             <br>
             <input type="text" name="email">
-            <span class="nanda">*</span>
+            <span class="nanda">* <?php echo $cpfErr ?></span>
             <br>
             <br>
             <label for="email">Senha:</label>
             <br>
             <input type="text" name="email">
-            <span class="nanda">*</span>
+            <span class="nanda">* <?php echo $senhaErr ?></span>
             <br>
             <br>
             <br>
