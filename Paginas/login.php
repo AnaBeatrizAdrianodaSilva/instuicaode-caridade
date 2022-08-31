@@ -1,3 +1,48 @@
+<?php
+    include "../include/MySql.php";
+    include "../include/functions.php";
+
+    session_start();
+    $_SESSION['nome'] = "";
+
+    $email = $senha = "";
+    $emailErr = $senhaErr = "";
+
+    if ($_SERVER['REQUEST_METHOD'] == "POST"){
+        if (empty($_POST['email'])){
+            $emailErr = "Email é obrigatório!";
+        } else {
+            $email = test_input($_POST["email"]);
+        }
+
+        if (empty($_POST['senha'])){
+            $senhaErr = "Senha é obrigatória!";
+        } else {
+            $senha = test_input($_POST['senha']);
+        }
+
+        // Codigo para consultar os dados no Banco de Dados
+        //Consulta no banco de dados
+        $sql = $pdo->prepare("SELECT * FROM usuario 
+                              WHERE email = ? AND senha = ?");
+        if ($sql->execute(array($email,MD5($senha)))){
+            $info = $sql->fetchAll(PDO::FETCH_ASSOC); //deve estar o problema aqui
+            if (count($info) > 0) { 
+                foreach($info as $key => $values){
+                    $_SESSION['nome'] = $values['nome'];
+                    
+                }
+                header('location:index.php');
+            } else {
+                echo '<h6>Email ou senha não cadastrados</h6>';
+            }
+        }  
+    }
+
+?>
+<?php
+    require("../templates/header.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,40 +55,35 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/styleLogin.css">
+    <link rel="stylesheet" href="../CSS/styleLogin.css"> 
     <link rel="stylesheet" href="../CSS/styleHeader.css">
     <link rel="stylesheet" href="CSS/styleFooter.css">
 </head>
 
 <body>
-    <?php
-    require("../templates/header.php");
-    ?>
-
     <!-- <div class="container"> -->
-    <form method="post" action="" class="form">
+    <form method="POST" action="" class="form">
         <h1>L&nbsp;&nbsp;O&nbsp;&nbsp;G&nbsp;&nbsp;I&nbsp;&nbsp;N</h1>
 
         <label for="email">Email:</label>
         <br>
-        <input type="text" name="email">
-        <span class="nanda">*</span>
-        <br>
+        <input type="text" name="email" value="<?php echo $email?>">
+            <span class="obrigatorio">* <?php echo $emailErr ?></span>
         <br>
 
         <label for="senha">Senha:</label>
         <br>
-        <input type="text" name="senha">
-        <span class="nanda">* </span>
+        <input type="text" name="senha" value="<?php echo $senha?>">
+            <span class="obrigatorio">* <?php echo $senhaErr ?></span>
         <br>
         <br>
 
-        <input class="botao" type="submit" value="Login">
+        <input class="botao" type="submit" value="Salvar" name="cadastro">
+        <span class="obrigatorio"><?php echo $msgErr ?></span>
         <p>Não possui conta? <a href="cadUsuario.php">Crie agora</a></p>
     </form>
-
-    <?php
-        require("../templates/footer.php");
-    ?>
 </body>
 </html>
+<?php
+    require("../templates/footer.php");
+?>

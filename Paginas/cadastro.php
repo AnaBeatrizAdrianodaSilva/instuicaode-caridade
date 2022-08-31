@@ -107,6 +107,7 @@
             <br>
             
             <input class="botao" type="submit" value="Salvar" name="cadastro">
+            <!-- <button type="submit" class="botao">Salvar</button> -->
             <span class="obrigatorio"><?php echo $msgErr ?></span>
             <p>Já possuí uma conta? <a class="espesifico" href="cadUsuario.php">Entre agora</a></p>
         </form>
