@@ -47,7 +47,8 @@
     top: 8.813rem;
     right: 0;
     bottom: 0;
-    left: 41.563rem;
+    /* left: 650px; */
+    left: 40.625rem;
 }
 
 .cabeca h1,.textInst {
