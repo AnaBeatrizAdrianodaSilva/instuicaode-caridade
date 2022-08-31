@@ -76,24 +76,28 @@
         <form method="POST" action="" class="form">
             <h1>C&nbsp;&nbsp;A&nbsp;&nbsp;D&nbsp;&nbsp;A&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;R&nbsp;&nbsp;O</h1>
             <br>
+
             <label for="nome">Nome Completo:</label>
             <br>
             <input type="text" name="nome" value="<?php echo $nome?>">
             <span class="obrigatorio">* <?php echo $nomeErr ?></span>
             <br>
             <br>
+
             <label for="email">Email:</label>
             <br>
             <input type="email" name="email" value="<?php echo $email?>">
             <span class="obrigatorio">* <?php echo $emailErr ?></span>
             <br>
             <br>
+
             <label for="cpf">CPF:</label>
             <br>
-            <input type="number" name="cpf" value="<?php echo $cpf?>">
+            <input type="number" name="cpf" value="<?php echo $cpf?>" placeholder='000.000.000-0'>
             <span class="obrigatorio">* <?php echo $cpfErr ?></span>
             <br>
             <br>
+
             <label for="senha">Senha:</label>
             <br>
             <input type="password" name="senha" value="<?php echo $senha?>">
@@ -101,6 +105,7 @@
             <br>
             <br>
             <br>
+            
             <input class="botao" type="submit" value="Salvar" name="cadastro">
             <span class="obrigatorio"><?php echo $msgErr ?></span>
             <p>Já possuí uma conta? <a class="espesifico" href="cadUsuario.php">Entre agora</a></p>
