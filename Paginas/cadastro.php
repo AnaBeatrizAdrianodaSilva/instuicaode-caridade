@@ -30,12 +30,12 @@
         
         //verificar se existe um usuario
         if ($email && $nome && $cpf && $senha){
-            $sql = $pdo->prepare("SELECT * FROM usuario WHERE email = ?");
+            $sql = $pdo->prepare("SELECT * FROM cadastro WHERE email = ?");
             if ($sql->execute(array($email))){
                 if ($sql->rowCount() > 0){
                     $msgErr = "Usuário já cadastrado!";
                 }else{
-                    $sql = $pdo->prepare("INSERT INTO USUARIO (codigo, email, nome, cpf, senha)
+                    $sql = $pdo->prepare("INSERT INTO CADASTRO (codigo, email, nome, cpf, senha)
                                           values (null, ?,?,?,?)");
                     if ($sql->execute(array($nome, $email, md5($senha), $cpf))){
                         $msgErr = "Dados cadastrados com sucesso!";
