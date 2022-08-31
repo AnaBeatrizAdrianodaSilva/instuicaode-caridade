@@ -17,7 +17,7 @@
 
    /* Cofig Globais */
 
-   * {
+* {
     font-family: Arial, sans-serif;
     font-size:32px;
     padding: 0;
@@ -70,12 +70,18 @@ h1{
 
 
 input {
-    border: none;
     background-color: var(--color-8);
-    border-radius: 108px;
     width: 810px;
     height:74px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 108px;
     transition: all 0.5s ease   ;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .form label, input[type='submit'] {
