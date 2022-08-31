@@ -152,6 +152,8 @@
 
 /* RESPONSIVO */
 
+    /* 1680px */
+
 @media (max-width: 1680px) {
     /* HEADER */
 
@@ -168,5 +170,15 @@
 
     .instituicoes figure:after {
         width: 88.875rem;
+    }
+}
+
+    /* 1440px */
+
+@media (max-width: 1440px) {
+    /* HEADER */
+
+    .cabeca:after {
+        left: 569.008px;
     }
 }

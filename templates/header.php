@@ -20,21 +20,6 @@
 </head>
 
 <body>
-    <!-- <nav class="menu">
-        <img src="../img/logo.png" alt="Logo" class="logo">
-        <ul>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li id="cadastrar">
-                <a href=""> Cadastrar</a>
-            </li>
-            <li>
-                <a href="">Login</a>
-            </li>
-        </ul>
-    </nav> -->
-
     <header>
         <nav class="nav-bar">
             <div class="logo">
