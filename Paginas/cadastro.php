@@ -89,28 +89,28 @@
         <form method="post" action="" class="form">
             <h1>C&nbsp;&nbsp;A&nbsp;&nbsp;D&nbsp;&nbsp;A&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;R&nbsp;&nbsp;O</h1>
             <br>
-            <label for="email">Nome Completo:</label>
+            <label for="nome">Nome Completo:</label>
             <br>
-            <input type="text" name="email">
+            <input type="text" name="nome">
             <span class="nanda">* <?php echo $nomeErr ?></span>
             <br>
             <br>
 
-            <label for="senha">Email:</label>
+            <label for="email">Email:</label>
             <br>
-            <input type="text" name="senha">
+            <input type="email" name="email">
             <span class="nanda">* <?php echo $emailErr ?></span>
             <br>
             <br>
-            <label for="email">CPF:</label>
+            <label for="cpf">CPF:</label>
             <br>
-            <input type="text" name="email">
+            <input type="number" name="cpf" min='0' max='11'>
             <span class="nanda">* <?php echo $cpfErr ?></span>
             <br>
             <br>
-            <label for="email">Senha:</label>
+            <label for="senha">Senha:</label>
             <br>
-            <input type="text" name="email">
+            <input type="password" name="senha">
             <span class="nanda">* <?php echo $senhaErr ?></span>
             <br>
             <br>
