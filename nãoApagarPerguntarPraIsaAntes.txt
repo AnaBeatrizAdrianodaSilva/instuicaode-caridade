@@ -63,3 +63,76 @@
     <!-- </div> -->
 </body>
 </html>
+
+------------------------------------------
+- Coisa que eu mudei: 31/08/22
+
+<nav class="menu">
+        <img src="" alt="Logo">
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li id="cadastrar">
+                <a href=""> Cadastrar</a>
+            </li>
+            <li>
+                <a href="">Login</a>
+            </li>
+        </ul>
+    </nav>
+----------------------
+min='0' max='11'
+utf8mb4_ganeral_ci
+
+------------------
+- Bancos de dados
+
+!problema não está no codigo, já testei, está no xampp
+!Está trocando o nome com o email e cpf com senha
+! E talvez "DECIMAL" que foi atribuido para o "CPF", não isso que ele precise.a
+
+	if (empty($_POST['email'])){
+            $emailErr = "Email é obrigatório!";
+        } else {
+            $email = test_input($_POST["email"]);
+        }
+        if (empty($_POST['senha'])){
+            $senhaErr = "Senha é obrigatório!";
+        } else {
+            $senha = test_input($_POST["senha"]);
+        }
+        if (empty($_POST['nome'])){
+            $nomeErr = "Nome é obrigatório!";
+        } else {
+            $nome = test_input($_POST["nome"]);
+        }
+        if (empty($_POST['cpf'])){
+            $cpfErrErr = "cpf é obrigatório!";
+        } else {
+            $cpf = test_input($_POST["cpf"]);
+        }
+        
+------------------------
+novo
+
+	 if (empty($_POST['nome'])){
+            $nomeErr = "Nome é obrigatório!";
+        } else {
+            $nome = test_input($_POST["nome"]);
+        }
+	if (empty($_POST['email'])){
+            $emailErr = "Email é obrigatório!";
+        } else {
+            $email = test_input($_POST["email"]);
+        }
+ 	if (empty($_POST['cpf'])){
+            $cpfErrErr = "cpf é obrigatório!";
+        } else {
+            $cpf = test_input($_POST["cpf"]);
+        }
+	if (empty($_POST['senha'])){
+            $senhaErr = "Senha é obrigatório!";
+        } else {
+            $senha = test_input($_POST["senha"]);
+        }

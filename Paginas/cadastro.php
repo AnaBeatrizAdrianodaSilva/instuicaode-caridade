@@ -4,30 +4,29 @@
 
     //variaveis
     $email = $nome = $cpf = $senha = "";
-    $emailErr = $nomeErr = $cpfErr = $senhaErr = "";
+    $emailErr = $nomeErr = $cpfErr = $senhaErr = $msgErr = "";
 
     if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['cadastro'])){
-        if (empty($_POST['email'])){
-            $emailErr = "Email é obrigatório!";
-        } else {
-            $email = test_input($_POST["email"]);
-        }
-        if (empty($_POST['senha'])){
-            $senhaErr = "Senha é obrigatório!";
-        } else {
-            $senha = test_input($_POST["senha"]);
-        }
         if (empty($_POST['nome'])){
             $nomeErr = "Nome é obrigatório!";
         } else {
             $nome = test_input($_POST["nome"]);
         }
-        if (empty($_POST['cpf'])){
+	    if (empty($_POST['email'])){
+            $emailErr = "Email é obrigatório!";
+        } else {
+            $email = test_input($_POST["email"]);
+        }
+ 	    if (empty($_POST['cpf'])){
             $cpfErrErr = "cpf é obrigatório!";
         } else {
             $cpf = test_input($_POST["cpf"]);
         }
-        
+	    if (empty($_POST['senha'])){
+            $senhaErr = "Senha é obrigatório!";
+        } else {
+            $senha = test_input($_POST["senha"]);
+        }
         //verificar se existe um usuario
         if ($email && $nome && $cpf && $senha){
             $sql = $pdo->prepare("SELECT * FROM cadastro WHERE email = ?");
@@ -55,7 +54,9 @@
 
 
 
-
+<?php
+    require ('../templates/header.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -70,54 +71,43 @@
 </head>
 
 <body>
-    <nav class="menu">
-        <img src="" alt="Logo">
-        <ul>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li id="cadastrar">
-                <a href=""> Cadastrar</a>
-            </li>
-            <li>
-                <a href="">Login</a>
-            </li>
-        </ul>
-    </nav>
 
     <!-- <div class="container"> -->
-        <form method="post" action="" class="form">
+        <form method="POST" action="" class="form">
             <h1>C&nbsp;&nbsp;A&nbsp;&nbsp;D&nbsp;&nbsp;A&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;R&nbsp;&nbsp;O</h1>
             <br>
             <label for="nome">Nome Completo:</label>
             <br>
-            <input type="text" name="nome">
-            <span class="nanda">* <?php echo $nomeErr ?></span>
+            <input type="text" name="nome" value="<?php echo $nome?>">
+            <span class="obrigatorio">* <?php echo $nomeErr ?></span>
             <br>
             <br>
-
             <label for="email">Email:</label>
             <br>
-            <input type="email" name="email">
-            <span class="nanda">* <?php echo $emailErr ?></span>
+            <input type="email" name="email" value="<?php echo $email?>">
+            <span class="obrigatorio">* <?php echo $emailErr ?></span>
             <br>
             <br>
             <label for="cpf">CPF:</label>
             <br>
-            <input type="number" name="cpf" min='0' max='11'>
-            <span class="nanda">* <?php echo $cpfErr ?></span>
+            <input type="number" name="cpf" value="<?php echo $cpf?>">
+            <span class="obrigatorio">* <?php echo $cpfErr ?></span>
             <br>
             <br>
             <label for="senha">Senha:</label>
             <br>
-            <input type="password" name="senha">
-            <span class="nanda">* <?php echo $senhaErr ?></span>
+            <input type="password" name="senha" value="<?php echo $senha?>">
+            <span class="obrigatorio">* <?php echo $senhaErr ?></span>
             <br>
             <br>
             <br>
-            <input class="botao" type="submit" value="Cadastrar">
+            <input class="botao" type="submit" value="Salvar" name="cadastro">
+            <span class="obrigatorio"><?php echo $msgErr ?></span>
             <p>Já possuí uma conta? <a class="espesifico" href="cadUsuario.php">Entre agora</a></p>
         </form>
     <!-- </div> -->
 </body>
 </html>
+<?php
+    require ('../templates/footer.php');
+?>
