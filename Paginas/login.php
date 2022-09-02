@@ -6,7 +6,7 @@
     $_SESSION['nome'] = "";
 
     $email = $senha = "";
-    $emailErr = $senhaErr = "";
+    $emailErr = $senhaErr = $msgErr =  "";
 
     if ($_SERVER['REQUEST_METHOD'] == "POST"){
         if (empty($_POST['email'])){
@@ -23,7 +23,7 @@
 
         // Codigo para consultar os dados no Banco de Dados
         //Consulta no banco de dados
-        $sql = $pdo->prepare("SELECT * FROM usuario 
+        $sql = $pdo->prepare("SELECT * FROM cadastro 
                               WHERE email = ? AND senha = ?");
         if ($sql->execute(array($email,MD5($senha)))){
             $info = $sql->fetchAll(PDO::FETCH_ASSOC); //deve estar o problema aqui
