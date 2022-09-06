@@ -72,6 +72,9 @@
                     
                     Mais informações: <a href='tel:+1124597000'>(11) 2459-7000</a>
                 </p>
+                <p>
+                    Saiba Mais: <a href="#">Casas André Luiz</a>
+                </p>
             </figcaption>
         </figure>
 
