@@ -8,3 +8,4 @@ TIPO: Quando já estiver logado, ou seja estiver na pág. index.php e varMais.ph
 
 # URGENTE 
 - TEM ALGO DE ERRADO COM A RESPONSIVIDADE DO CADASTRO USUARIO
+- tirar aquela img do cadastro e login
