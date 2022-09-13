@@ -66,7 +66,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/styleCadastro.css">
+    <link rel="stylesheet" href="../CSS/stylecadInstituicao.css">
     <link rel="stylesheet" href="../CSS/styleHeader.css">
 </head>
 
@@ -100,8 +100,10 @@
 
             <label for="cpf">Descrição:</label>
             <br>
-            <input type="text" name="descricao" value="<?php echo $cpf?>" placeholder='000.000.000-0'>
+            <input type="text" name="descricao" value="<?php echo $cpf?>">
             <span class="obrigatorio">* <?php echo $cpfErr ?></span>
+            <!-- <input type="text" name="descricao" value="<?php echo $cpf?>" placeholder='000.000.000-0'>
+            <span class="obrigatorio">* <?php echo $cpfErr ?></span> -->
             <br>
             <br>
 
@@ -111,7 +113,10 @@
             <span class="obrigatorio">* <?php echo $senhaErr ?></span>
             <br>
             <br>
-            <input type="file" name="arquivos" class="btn btn-success" multiple/>
+            <label class="labelInput">
+                <input type="file" required/>
+                <span>Adicione o arquivo</span>
+            </label>
             <br>
             <br>
             <br>
