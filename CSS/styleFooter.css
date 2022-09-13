@@ -73,6 +73,10 @@
     font-weight: bold;
 }
 
+/* .sobrePI {
+    order: -1;
+} */
+
 .sobrePI p {
     line-height: 31px;
     letter-spacing: 1.4px;
@@ -82,4 +86,11 @@
     margin-top: 20px;
 }
 
-
+@media screen and (max-width:900px){
+    .sobrePI{
+        order: -1;
+    }
+    .rodape{
+        height: 900px;
+    }
+}
